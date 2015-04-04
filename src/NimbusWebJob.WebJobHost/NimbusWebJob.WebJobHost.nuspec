@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+<metadata>
+    <id>NimbusWebJob.WebJobHost</id>
+    <version>$version$</version>
+    <authors>Michael Wolfenden</authors>
+    <owners>Michael Wolfenden</owners>
+    <description>NimbusWebJob.WebJobHost</description>
+</metadata>
+<files>
+    <file src="App_Data\jobs\continuous\nimbus-web-job\*.*" target="App_Data\jobs\continuous\nimbus-web-job" />
+</files>
+</package>

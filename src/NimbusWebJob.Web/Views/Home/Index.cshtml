@@ -1,0 +1,23 @@
+﻿@model NimbusWebJob.Web.ViewModels.IndexInputModel
+<h3>Customer Signup</h3>
+
+@using (Html.BeginForm())
+{
+    <div class="row">
+        <div class="six columns">
+            @Html.LabelFor(x => x.GivenName)
+            @Html.TextBoxFor(x => x.GivenName, new {@class = "u-full-width", required = "required"})
+        </div>
+        <div class="six columns">
+            @Html.LabelFor(x => x.FamilyName)
+            @Html.TextBoxFor(x => x.FamilyName, new {@class = "u-full-width", required = "required"})
+        </div>
+    </div>
+    
+    @Html.LabelFor(x => x.EmailAddress)
+    @Html.TextBoxFor(x => x.EmailAddress, new { @class = "u-full-width", required = "required", type = "email" })
+
+    <input class="button-primary" type="submit" value="Sign me up!">
+}
+
+<h4>@ViewBag.Message</h4>

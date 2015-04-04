@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NimbusWebJob.Web", "src\NimbusWebJob.Web\NimbusWebJob.Web.csproj", "{CAABC7D0-2F02-4CDA-8DBD-3BA8AF94EEC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NimbusWebJob.WebJobHost", "src\NimbusWebJob.WebJobHost\NimbusWebJob.WebJobHost.csproj", "{6B2593CD-B2CB-4AD7-9F74-A1EF296A463E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NimbusWebJob.WebJob", "src\NimbusWebJob.WebJob\NimbusWebJob.WebJob.csproj", "{F94AAAEE-8196-418A-9A39-DE6842F1DA7B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{656699D1-6869-4D84-AF02-F4DCF4392BC6}"
+	ProjectSection(SolutionItems) = preProject
+		src\GlobalAssemblyInfo.cs = src\GlobalAssemblyInfo.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NimbusWebJob.MessageContracts", "src\NimbusWebJob.MessageContracts\NimbusWebJob.MessageContracts.csproj", "{C4DD1FF6-4E16-4AC1-BC89-97AD77C51B5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAABC7D0-2F02-4CDA-8DBD-3BA8AF94EEC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAABC7D0-2F02-4CDA-8DBD-3BA8AF94EEC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAABC7D0-2F02-4CDA-8DBD-3BA8AF94EEC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAABC7D0-2F02-4CDA-8DBD-3BA8AF94EEC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B2593CD-B2CB-4AD7-9F74-A1EF296A463E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B2593CD-B2CB-4AD7-9F74-A1EF296A463E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B2593CD-B2CB-4AD7-9F74-A1EF296A463E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B2593CD-B2CB-4AD7-9F74-A1EF296A463E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F94AAAEE-8196-418A-9A39-DE6842F1DA7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F94AAAEE-8196-418A-9A39-DE6842F1DA7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F94AAAEE-8196-418A-9A39-DE6842F1DA7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F94AAAEE-8196-418A-9A39-DE6842F1DA7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4DD1FF6-4E16-4AC1-BC89-97AD77C51B5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4DD1FF6-4E16-4AC1-BC89-97AD77C51B5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4DD1FF6-4E16-4AC1-BC89-97AD77C51B5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4DD1FF6-4E16-4AC1-BC89-97AD77C51B5B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
