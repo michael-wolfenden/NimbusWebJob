@@ -1,10 +1,10 @@
 #NimbusWebJob
 
 ## What is this?
-This is small sample app showing how to host [Nimubs](https://github.com/NimbusAPI/Nimbus) in a continous running [web job](http://www.hanselman.com/blog/IntroducingWindowsAzureWebJobs.aspx)
+This is small sample app showing how to host [Nimubs](https://github.com/NimbusAPI/Nimbus) in a continuous [Web Job](http://www.hanselman.com/blog/IntroducingWindowsAzureWebJobs.aspx)
 
 ## Why would I want to do that?
-Well the alternatives are to host in an web/worker role or a vm, however given the choice
+Well the alternatives are to host in an web/worker role or a vm, however given the choice ...
 > Web Sites is the best choice since it’s the simplest option and is fully-managed. The Web Sites platform is being constantly innovated on with new features surfacing almost every month – Microsoft are investing a lot of resources into making sure it’s a state of the art platform
 
 [http://robdmoore.id.au/blog/2012/06/09/windows-azure-web-sites-vs-web-roles/](http://robdmoore.id.au/blog/2012/06/09/windows-azure-web-sites-vs-web-roles/)
@@ -18,11 +18,11 @@ Defines the shared command and events types
 MVC application showing a fictitious customer signup process to demonstrate publish an event on the bus using Nimbus
 
 ##### NimbusWebJob.WebJob
-Console application that will host Nimbus and be deployed as a continous running WebJob
+Console application that will host Nimbus and be deployed as a continuous WebJob
 
 ##### NimbusWebJob.WebJobHost
-Rather than publishing NimbusWebJob.WebJob as a continous running webjob on its own, you can publish it as part of a website. 
-I prefer this as you can use the website to show bus statistics such as queue / topics names and counts. This project is a demonstration of this.
+Rather than publishing NimbusWebJob.WebJob as a continuous WebJob on its own, you can publish it as part of a website. 
+I prefer this as you can use the WeSite hosting the WebJob to show bus statistics such as queue / topics names and counts. This project is a demonstration of this.
 
 ## Running locally
 
