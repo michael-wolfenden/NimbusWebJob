@@ -1,0 +1,45 @@
+﻿@model NimbusWebJob.WebJobHost.ViewModels.BusModel
+
+<div class="row">
+    <h3>Queues</h3>
+    <table class="u-full-width">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Active Message Count</th>
+                <th>Dead letter Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var queue in Model.Queues)
+            {
+                <tr>
+                    <td>@queue.Name</td>
+                    <td>@queue.ActiveMessageCount</td>
+                    <td>@queue.DeadLetterCount</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <h3>Topics</h3>
+    <table class="u-full-width">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Active Message Count</th>
+                <th>Dead letter Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var topic in Model.Topics)
+            {
+                <tr>
+                    <td>@topic.Name</td>
+                    <td>@topic.ActiveMessageCount</td>
+                    <td>@topic.DeadLetterCount</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

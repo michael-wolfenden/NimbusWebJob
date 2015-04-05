@@ -16,13 +16,13 @@ namespace NimbusWebJob.WebJob.Infrastructure
 
             _watcher.Created += (sender, args) =>
             {
-                Log.Information("FolderWatcher: detected 'Created' event");
+                Log.Information("FolderWatcher: detected 'Created' event {@FileSystemEventArgs}", args);
                 onCreateOrChange(args);
             };
 
             _watcher.Changed += (sender, args) =>
             {
-                Log.Information("FolderWatcher: detected 'Changed' event");
+                Log.Information("FolderWatcher: detected 'Changed' event {@FileSystemEventArgs}", args);
                 onCreateOrChange(args);
             };
 

@@ -43,7 +43,7 @@ namespace NimbusWebJob.WebJob
             const string webjobsShutdownFile = "WEBJOBS_SHUTDOWN_FILE";
 
             var pathToWatch = Environment.GetEnvironmentVariable(webjobsShutdownFile)
-                              ?? Path.Combine(Path.GetTempPath(), webjobsShutdownFile);
+                              ?? Path.Combine(Path.GetTempPath(), webjobsShutdownFile + "\\");
 
             return pathToWatch;
         }
