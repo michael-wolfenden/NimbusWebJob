@@ -39,7 +39,12 @@ namespace NimbusWebJob.WebJob
 
         private static string PathToWatchToDetectShutdown()
         {
-            // http://blog.amitapple.com/post/2014/05/webjobs-graceful-shutdown/
+            // The way Azure notifies the process it's about to be stopped is by placing 
+            // (creating) a file at a path that is passed as an environment variable 
+            // called WEBJOBS_SHUTDOWN_FILE. Locally, this environmental variable will not
+            // exists so we set the watch folder to %TEMP%\WEBJOBS_SHUTDOWN_FILE\ directory
+            // see: http://blog.amitapple.com/post/2014/05/webjobs-graceful-shutdown/
+
             const string webjobsShutdownFile = "WEBJOBS_SHUTDOWN_FILE";
 
             var pathToWatch = Environment.GetEnvironmentVariable(webjobsShutdownFile)

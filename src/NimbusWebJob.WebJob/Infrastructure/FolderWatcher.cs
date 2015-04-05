@@ -10,19 +10,13 @@ namespace NimbusWebJob.WebJob.Infrastructure
 
         public FolderWatcher(string folderToWatch, Action<FileSystemEventArgs> onCreateOrChange)
         {
-            Log.Information("FolderWatcher: Watching {FolderToWatch}", folderToWatch);
+            Log.Information("FolderWatcher watching {FolderToWatch}", folderToWatch);
 
             _watcher = new FileSystemWatcher(Path.GetDirectoryName(folderToWatch));
 
             _watcher.Created += (sender, args) =>
             {
-                Log.Information("FolderWatcher: detected 'Created' event {@FileSystemEventArgs}", args);
-                onCreateOrChange(args);
-            };
-
-            _watcher.Changed += (sender, args) =>
-            {
-                Log.Information("FolderWatcher: detected 'Changed' event {@FileSystemEventArgs}", args);
+                Log.Information("FolderWatcher detected 'Created' event {@FileSystemEventArgs}", args);
                 onCreateOrChange(args);
             };
 
@@ -33,7 +27,7 @@ namespace NimbusWebJob.WebJob.Infrastructure
 
         public void Dispose()
         {
-            Log.Information("Disposing Watcher");
+            Log.Information("FolderWatcher disposing");
 
             _watcher.Dispose();
         }
