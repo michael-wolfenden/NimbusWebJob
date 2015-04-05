@@ -1,7 +1,7 @@
 #NimbusWebJob
 
 ## What is this?
-This is small sample app that shows how to host [Nimubs](https://github.com/NimbusAPI/Nimbus) in a continous running [web job](http://www.hanselman.com/blog/IntroducingWindowsAzureWebJobs.aspx)
+This is small sample app showing how to host [Nimubs](https://github.com/NimbusAPI/Nimbus) in a continous running [web job](http://www.hanselman.com/blog/IntroducingWindowsAzureWebJobs.aspx)
 
 ## Why would I want to do that?
 Well the alternatives are to host in an web/worker role or a vm, however given the choice
