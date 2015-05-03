@@ -12,7 +12,9 @@ namespace NimbusWebJob.WebJob.AutofacModules
                                      .RegisterWithContainer(configSetting => builder.RegisterInstance(configSetting)
                                                                                     .AsSelf()
                                                                                     .SingleInstance())
-                                     .AllowConfigurationEntriesThatDoNotHaveSettingsClasses(false)
+                                      // seems that on deployment, azure add extra settings 
+                                      // to your configuration file
+                                     .AllowConfigurationEntriesThatDoNotHaveSettingsClasses(true)
                                      .DoYourThing();
         }
     }
