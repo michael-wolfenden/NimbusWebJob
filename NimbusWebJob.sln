@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NimbusWebJob.Web", "src\NimbusWebJob.Web\NimbusWebJob.Web.csproj", "{CAABC7D0-2F02-4CDA-8DBD-3BA8AF94EEC2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NimbusWebJob.WebJobHost", "src\NimbusWebJob.WebJobHost\NimbusWebJob.WebJobHost.csproj", "{6B2593CD-B2CB-4AD7-9F74-A1EF296A463E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F94AAAEE-8196-418A-9A39-DE6842F1DA7B} = {F94AAAEE-8196-418A-9A39-DE6842F1DA7B}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NimbusWebJob.WebJob", "src\NimbusWebJob.WebJob\NimbusWebJob.WebJob.csproj", "{F94AAAEE-8196-418A-9A39-DE6842F1DA7B}"
 EndProject
