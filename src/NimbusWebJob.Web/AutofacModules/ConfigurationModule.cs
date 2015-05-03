@@ -12,13 +12,9 @@ namespace NimbusWebJob.Web.AutofacModules
                                      .RegisterWithContainer(configSetting => builder.RegisterInstance(configSetting)
                                                                                     .AsSelf()
                                                                                     .SingleInstance())
-                                     .AllowConfigurationEntriesThatDoNotHaveSettingsClasses(false)
-                                     .ExcludeSettingKeys(
-                                        "webpages:Version",
-                                        "webpages:Enabled",
-                                        "ClientValidationEnabled",
-                                        "UnobtrusiveJavaScriptEnabled"
-                                      )
+                                    // seems that on deployment, azure add extra settings 
+                                    // to your configuration file
+                                     .AllowConfigurationEntriesThatDoNotHaveSettingsClasses(true)
                                      .DoYourThing();
         }
     }
